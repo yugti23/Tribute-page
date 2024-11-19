@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Mahatma Gandhi</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background: #4a6e4d; 
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        section:hover {
+            background: #bcd0e2; 
+            transform: scale(1.02);
+        }
+
+        section h2 {
+            margin-bottom: 1rem;
+            color: #4a6e4d;
+            font-size: 2rem;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        blockquote {
+            border-left: 4px solid #4a6e4d;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            font-style: italic;
+            background: #4a6e4d;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        footer {
+            background: #4a6e4d;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        
+        /* Gallery Styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        /* Large Image above Gallery */
+        .hero-image {
+            width: 100%;
+            max-height: 1500px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tribute to Mahatma Gandhi</h1>
+        <p>Leader of the Indian Independence Movement</p>
+    </header>
+
+    <!-- Large Image Section -->
+    <section class="hero-image">
+        <img src="https://i.pinimg.com/474x/ef/c7/e9/efc7e9c5107e3b57dadc5983ef569827.jpg" alt="Mahatma Gandhi Portrait">
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="https://i.pinimg.com/564x/4f/65/18/4f651899dcc744927fcc2792f9d16124.jpg" alt="Gandhi Photo 1">
+            <img src="https://i.pinimg.com/564x/72/88/40/7288406d6ca89dca7ee37448cc7bf50b.jpg" alt="Gandhi Photo 2">
+            <img src="https://i.pinimg.com/564x/78/0d/90/780d9032ce0c630689bb0e540a3fa8bf.jpg" alt="Gandhi Photo 3">
+            <img src="https://i.pinimg.com/564x/87/3a/47/873a47965b6dad04c157750b8a9b15b2.jpg" alt="Gandhi Photo 4">
+            <img src="https://i.pinimg.com/564x/23/c9/24/23c92429c6236043c1ad04fc2bb2b9e5.jpg" alt="Gandhi Photo 5">
+            <img src="https://i.pinimg.com/564x/d4/d8/71/d4d8710178fa2a5f6ffbf3d8f3eda6dc.jpg" alt="Gandhi Photo 6">
+        </div>
+    </section>
+    
+    <section id="early-life">
+        <h2>Early Life</h2>
+        <p>Mahatma Gandhi was born on October 2, 1869, in Porbandar, India. He studied law in London and later became a civil rights activist in South Africa, where he developed his philosophy of non-violent resistance, known as Satyagraha.</p>
+    </section>
+
+    <section id="career-highlights">
+        <h2>Career Highlights</h2>
+        <ul>
+            <li><strong>Leader of Indian Independence Movement:</strong> Gandhi played a pivotal role in mobilizing the masses against British rule through non-violent protests and civil disobedience.</li>
+            <li><strong>Salt March (1930):</strong> This 240-mile march to the Arabian Sea to protest the British salt tax became a significant event in the struggle for independence.</li>
+            <li><strong>Champion of Non-Violence:</strong> Gandhi's philosophy of non-violence inspired civil rights movements around the world, influencing leaders like Martin Luther King Jr. and Nelson Mandela.</li>
+        </ul>
+    </section>
+
+    <section id="awards-recognition">
+        <h2>Awards and Recognitions</h2>
+        <ul>
+            <li>Time Magazine’s Person of the Year (1930)</li>
+            <li>Nominated for the Nobel Peace Prize multiple times (never awarded)</li>
+            <li>Global recognition as a symbol of peace and non-violence</li>
+        </ul>
+    </section>
+
+    <section id="international-recognition">
+        <h2>International Recognition</h2>
+        <ul>
+            <li>Globally respected figure for his role in non-violent protest and civil rights.</li>
+            <li>His principles have influenced numerous movements for social change worldwide.</li>
+        </ul>
+    </section>
+
+    <section id="contributions">
+        <h2>Contributions Beyond Politics</h2>
+        <p>Gandhi was also a prolific writer and thinker, penning works such as "The Story of My Experiments with Truth." His writings reflect his philosophy of life, spirituality, and ethics.</p>
+    </section>
+
+    <section id="personal-life">
+        <h2>Personal Life</h2>
+        <p>Gandhi was married at the age of 13 to Kasturba Gandhi and had four children. He led a life of simplicity, often wearing only a dhoti and shawl. His dedication to non-violence and truth was evident in all aspects of his life.</p>
+    </section>
+
+    <section id="legacy">
+        <h2>Legacy</h2>
+        <p>Mahatma Gandhi's legacy continues to resonate globally. His teachings on peace, non-violence, and civil rights remain influential, and his birthday, October 2nd, is celebrated as International Day of Non-Violence.</p>
+    </section>
+
+    <section id="quotes">
+        <h2>Quotes</h2>
+        <blockquote>
+            <p>“Be the change that you wish to see in the world.” – Mahatma Gandhi</p>
+            <p>“In a gentle way, you can shake the world.” – Mahatma Gandhi</p>
+        </blockquote>
+    </section>
+
+    <footer>
+        <p>The end</p>
+    </footer>
+</body>
+</html>
