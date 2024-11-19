@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tribute to Indian Legends</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Times New Roman', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: white;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: black;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .title {
+        font-size: 80px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8), 3px 3px 5px #ff4d4d;
+        background-color: black;
+      }
+
+      .image-row {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 0px;
+        background-color: black;
+        padding-bottom: 100px;
+      }
+
+
+      .image-row img {
+        width: 180px;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-top: 50px;
+        opacity: 0.7;
+      }
+
+
+      .image-row .img3 {
+        width: 300px;
+        margin-top: -30px;
+        opacity: 0.7;
+        margin: auto 70px;
+      }
+
+      .image-row img:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 4px 15px rgba(255, 77, 77, 0.8);
+        margin-bottom: 0px;
+      }
+      h1 {
+        font-size: 16px;
+        margin-top: 0px;
+        color: white;
+        padding-bottom: 50px;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        background-color: black;
+      }
+      
+
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Navigation menu */
+        nav {
+            background-color: #6c6c6c;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        main {
+            padding: 2rem 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+
+        .personality {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            flex-basis: calc(33.33% - 1.5rem);
+            text-align: center ;
+        }
+
+        .personality img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .personality h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .personality p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #666;
+        }
+
+        .personality a {
+            background-color: black;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .personality a:hover {
+            background-color: #5a5a5a;
+        }
+
+        /* Footer */
+        footer {
+            background-color: black;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+
+/* Footer Bottom */
+
+.container-footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.newsletter {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.newsletter h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.newsletter p {
+  margin-bottom: 20px;
+}
+
+.email-form {
+  display: inline-flex;
+  border: 1px solid #333;
+}
+
+.email-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 300px;
+  font-size: 16px;
+}
+
+.email-form button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  margin-bottom: 40px;
+  background-color: white;
+}
+
+.footer-section {
+  width: 30%;
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.footer-section ul {
+  list-style-type: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.footer-section.bio p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: black;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+@media (max-width: 480px) {
+  .email-form input[type="email"] {
+    padding: 8px;
+    border: none;
+    outline: none;
+    width: 250px;
+    font-size: 16px;
+  }
+  .copyright {
+    text-align: center;
+    margin: -20px 0px -20px 0px;
+  }
+}
+        /* Media Queries */
+        @media (max-width: 1024px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            header p {
+                font-size: 1.1rem;
+            }
+
+            nav ul li a {
+                font-size: 1rem;
+            }
+
+            main {
+                padding: 2rem 4%;
+                gap: 1.5rem;
+            }
+
+            .personality {
+                flex-basis: calc(50% - 1.5rem); 
+            }
+
+            .personality h2 {
+                font-size: 1.5rem;
+            }
+
+            .personality p {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            nav ul li {
+                margin: 0 0.5rem;
+            }
+
+            nav ul li a {
+                font-size: 1rem;
+            }
+
+            main {
+                padding: 2rem 3%;
+            }
+
+            .personality {
+                flex-basis: 100%;
+            }
+
+            .personality h2 {
+                font-size: 1.4rem;
+            }
+
+            .personality p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            nav ul li a {
+                font-size: 0.9rem;
+            }
+
+            main {
+                padding: 2rem 2%;
+            }
+
+            .personality h2 {
+                font-size: 1.3rem;
+            }
+
+            .personality p {
+                font-size: 0.85rem;
+            }
+
+            .personality a {
+                font-size: 0.9rem;
+                padding: 0.4rem 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Tribute to Indian Legends</h1>
+        <p>Honoring the Great Personalities Who Shaped India's History</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#patel">Home</a></li>
+            <li><a href="#kalam">Resources</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="login.html">Login</a></li>
+           
+        </ul>
+    </nav>
+    <h1 class="title">Abhivyakti</h1>
+    <h1 class="text-belove-grid">
+        ------------------A tribute page for the famous indian
+        personalities------------------
+      </h1>
+  
+
+    <!-- Image Row Section -->
+    <div class="image-row">
+      <!-- Images with hover effect -->
+      <img
+        class="img1"
+        src="https://i.pinimg.com/474x/6d/5e/e8/6d5ee8a85318a48ee973c1619e323aee.jpg"
+        alt="Dr. Abdul Kalam"
+      />
+      <img
+        class="img2"
+        src="https://i.pinimg.com/474x/b5/34/6b/b5346b9fb3d85a8d17607c6430fcbcf6.jpg"
+        alt="B. R. Ambedkar"
+      />
+      <img
+        class="img3"
+        src="https://i.pinimg.com/736x/0a/6f/e9/0a6fe9f2bf7e1b21606cb40b80d89d76.jpg"
+        alt="Main Image"
+      />
+      <img
+        class="img4"
+        src="https://i.pinimg.com/474x/6b/3a/c1/6b3ac1c657f563b798e9d42c4f75e2db.jpg"
+        alt="Jawaharlal Nehru"
+      />
+      <img
+        class="img5"
+        src="https://i.pinimg.com/474x/d8/19/d3/d819d33e0053d5b92e23ef0cf1bc752b.jpg"
+        alt="Lal Bahadur Shastri"
+      />
+    </div>
+
+    <div class="description-section" style="padding: 50px; max: width 2000px; margin: 20; line-height: 1.6;">
+        <p style="font-size: 1.25rem; color: black;">
+          India’s history is rich with remarkable individuals who have inspired generations and shaped the path of a nation. 
+          Through their courage, intellect, and compassion, these icons of India – Dr. A.P.J. Abdul Kalam, B.R. Ambedkar, Jawaharlal Nehru, 
+          and Lal Bahadur Shastri, among others – have left an indelible mark on society. Their legacies transcend time, reminding us of the power 
+          of dedication, resilience, and vision.
+        </p>
+        <p style="font-size: 1.25rem; color: black; margin-top: 20px;">
+          This page, <em><strong>Abhivyakti</strong></em>, celebrates their contributions and commemorates their journey in shaping the cultural and 
+          social landscape of India. Whether they championed education, ignited dreams of science and space, fought for justice and equality, 
+          or guided the nation through pivotal moments, each of these leaders represents a pillar of India’s heritage. Let us remember, honor, and 
+          draw inspiration from their lives, striving to carry forward their dreams for a better future.
+        </p>
+      </div>
+
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Section for Gandhi -->
+        <section id="gandhi" class="personality">
+            <h2>Mahatma Gandhi</h2>
+            <img src="https://i.pinimg.com/474x/b7/cd/7d/b7cd7d9770cb876d5f68756dd690d886.jpg" alt="Mahatma Gandhi">
+            <p>
+                Mahatma Gandhi, leader of India's independence movement, pioneered non-violent resistance. His leadership was pivotal in India's freedom struggle and remains a global symbol of peace.
+            </p>
+            <a href="mg.html">Read more</a>
+        </section>
+
+        <!-- Section for Sardar Vallabhbhai Patel -->
+        <section id="patel" class="personality">
+            <h2>Sardar Vallabhbhai Patel</h2>
+            <img src="https://i.pinimg.com/564x/1c/91/ed/1c91ede71eb6372636cac128724c8a94.jpg" alt="Sardar Vallabhbhai Patel">
+            <p>
+                Sardar Vallabhbhai Patel, known as the "Iron Man of India," was instrumental in the unification of India post-independence. His efforts in integrating princely states into the Indian Union are considered a monumental achievement.<br><br>
+            <a href="svp.html">Read more</a>
+        </section>
+
+        <!-- Section for A.P.J Abdul Kalam -->
+        <section id="kalam" class="personality">
+            <h2>Dr. A.P.J Abdul Kalam</h2>
+            <img src="https://i.pinimg.com/474x/d6/13/a2/d613a2e10f12ca3088c391c29493d894.jpg" alt="A.P.J Abdul Kalam">
+            <p>
+                Dr. A.P.J Abdul Kalam, the Missile Man of India and a former President, was a scientist who inspired India's youth to dream big and work for the nation’s development.
+            </p>
+            <a href="ak.html">Read more</a>
+        </section>
+
+        <!-- Section for Dr. Rajendra Prasad -->
+        <section id="prasad" class="personality">
+            <h2>Dr. Rajendra Prasad</h2>
+            <img src="https://i.pinimg.com/564x/4d/48/0a/4d480acc67490ec6508036b40aed38fd.jpg" alt="Dr. Rajendra Prasad">
+            <p>
+                Dr. Rajendra Prasad, the first President of India, was a key leader in the Indian independence movement. His leadership, humility, and dedication to the nation have made him a revered figure in Indian history.<br><br>
+            <a href="drp.html">Read more</a>
+        </section>
+
+        <!-- Section for B.R. Ambedkar -->
+        <section id="ambedkar" class="personality">
+            <h2>Dr. B.R. Ambedkar</h2>
+            <img src="https://i.pinimg.com/474x/87/40/d5/8740d529c2aac207ee42296a3093cdec.jpg" alt="B.R. Ambedkar">
+            <p>
+                B.R. Ambedkar, a social reformer and the architect of the Indian Constitution, championed the cause of equality and human rights for the marginalized sections of Indian society.
+            </p>
+            <a href="br.html">Read more</a>
+        </section>
+
+        <!-- Section for Mother Teresa -->
+        <section id="teresa" class="personality">
+            <h2>Mother Teresa</h2>
+            <img src="https://i.pinimg.com/474x/4d/a0/d2/4da0d22e1486de9d2dd7014384784ff8.jpg" alt="Mother Teresa">
+            <p>
+                Mother Teresa, known for her selfless work among the poor, was awarded the Nobel Peace Prize. Her charitable work left a profound impact on millions.
+            </p>
+            <a href="mt.html">Read more</a>
+        </section>
+
+        <!-- Section for Bhagat Singh -->
+        <section id="bhagat" class="personality">
+            <h2>Bhagat Singh</h2>
+            <img src="https://i.pinimg.com/474x/5e/90/97/5e90970e8df5836763ac39be12656c57.jpg" alt="Bhagat Singh">
+            <p>
+                Bhagat Singh, an Indian revolutionary, played a key role in the fight against British colonial rule. His sacrifice for India's freedom continues to inspire generations.
+            </p>
+            <a href="bs.html">Read more</a>
+        </section>
+
+        <!-- Section for Jawaharlal Nehru -->
+        <section id="nehru" class="personality">
+            <h2>Jawaharlal Nehru</h2>
+            <img src="https://i.pinimg.com/474x/bb/90/36/bb9036939d0a9f7102c6b0d20e0f1494.jpg" alt="Jawaharlal Nehru">
+            <p>
+                Jawaharlal Nehru, India's first Prime Minister, laid the foundation for a modern and democratic India. His vision continues to influence the country's growth and development.
+            </p>
+            <a href="jn.html">Read more</a>
+        </section>
+
+        <!-- Section for Subhas Chandra Bose -->
+        <section id="bose" class="personality">
+            <h2>Subhas Chandra Bose</h2>
+            <img src="https://i.pinimg.com/564x/2d/50/f1/2d50f1f4f2e1b494f61ca4d5478a79f1.jpg" alt="Subhas Chandra Bose">
+            <p>
+                Subhas Chandra Bose, a fierce nationalist, led the Indian National Army (INA) and was a key figure in India's struggle for independence. His famous slogan, "Give me blood, and I will give you freedom," continues to inspire generations.
+            </p>
+            <a href="scb.html">Read more</a>
+        </section>
+
+        <!-- Section for Sarojini Naidu -->
+        <section id="naidu" class="personality">
+            <h2>Sarojini Naidu</h2>
+            <img src="https://i.pinimg.com/564x/d4/82/58/d482581e663133daab173d821a8cc138.jpg" alt="Sarojini Naidu">
+            <p>
+                Sarojini Naidu, also known as the "Nightingale of India," was a poet, freedom fighter, and the first woman to become the president of the Indian National Congress. She played a key role in the civil disobedience movement.
+            </p>
+            <a href="sn.html">Read more</a>
+        </section>
+        
+        <!-- Section for Lal Bahadur Shastri -->
+        <section id="shastri" class="personality">
+            <h2>Lal Bahadur Shastri</h2>
+            <img src="https://i.pinimg.com/564x/7d/04/8e/7d048eab02bd13e7aa9ddb9047035bb5.jpg" alt="Lal Bahadur Shastri">
+            <p>
+               Lal Bahadur Shastri, the second Prime Minister of India, was known for his leadership during the Indo-Pakistan War of 1965. His slogan "Jai Jawan Jai Kisan" became a rallying cry for strengthening both the military and agriculture.
+            </p>
+            <a href="lbs.html">Read more</a>
+        </section>
+
+ 
+
+        <!-- Section for Bal Gangadhar Tilak -->
+        <section id="tilak" class="personality">
+            <h2>Bal Gangadhar Tilak</h2>
+            <img src="https://i.pinimg.com/564x/1f/8c/db/1f8cdbc005d711f5c176deaedea038e3.jpg" alt="Bal Gangadhar Tilak">
+            <p>
+              Bal Gangadhar Tilak, a prominent freedom fighter and nationalist, was known for his famous slogan, "Swaraj is my birthright, and I shall have it!" He played a key role in inspiring India's fight for independence.
+            </p>
+            <a href="bgt.html">Read more</a>
+        </section>
+
+    </main>
+
+    <div class="container-footer">
+        <footer>
+            <div class="footer-section about">
+                <h3>ABOUT</h3>
+                <ul>
+                    <li><a href="#">Our Vission</a></li>
+                    <li><a href="jobs.html"></a></li>
+                    <li><a href="#">services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section help">
+                <h3>HELP</h3>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" id="support">Email us at: support@abhivyakti.co.in</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section bio">
+                <p>
+                    "Let us not foget the people who faught for us"
+                </p>
+            </div>
+        </footer>
+
+        <div class="copyright">
+            <p>© 2024 by Abhivyakti</p>
+        </div>
+    </div>
+</body>
+</html>
